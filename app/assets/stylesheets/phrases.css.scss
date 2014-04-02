@@ -1,0 +1,36 @@
+// Place all the styles related to the phrases controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.quote{
+  width: 960px;
+  margin: 0 auto;
+  & > h1{
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 72px;
+  }
+  & > p{
+    font-family: Helvetica;
+    text-align: right;
+    font-size: 24px;
+  }
+}
+
+.ranking{
+  padding: 50px;
+  background: #e74c3c;
+  border: 3px solid #272727;
+  width: 960px;
+  margin: 0 auto;
+  & > h3{
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 30px;
+  }
+  & > p{
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 18px;
+  }
+}
