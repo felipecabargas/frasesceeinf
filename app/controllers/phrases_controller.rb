@@ -1,5 +1,5 @@
 class PhrasesController < ApplicationController
-  before_action :set_phrase, only: [:show, :edit, :update, :destroy]
+  before_action :set_phrase, only: [:show]
 
   # GET /phrases
   # GET /phrases.json

@@ -1,18 +1,24 @@
-<div class='quote'>
-  <h1>"<%= @phrase.quote %>"</h1>
-  <p>- <%= @phrase.author %></p>
+<div class='content'>
+  <div class='quote'>
+    <h1>"<%= @phrase.quote %>"</h1>
+    <p>- <%= @phrase.author %></p>
+  </div>
+
 </div>
 
 <div class='ranking'>
-  <h3>Ranking</h3>
-  <p>Katty: <span><%=@phrases.where(author: 'Katty').count%></span></p>
-  <p>Rodri: <span><%=@phrases.where(author: 'Rodri').count%></span></p>
-  <p>Mauro: <span><%=@phrases.where(author: 'Mauro').count%></span></p>
-  <p>Rafik: <span><%=@phrases.where(author: 'Rafik').count%></span></p>
-  <p>Nacho Primo: <span><%=@phrases.where(author: 'Nacho Primo').count%></span></p>
-  <p>Nacho: <span><%=@phrases.where(author: 'Nacho').count%></span></p>
-  <p>Felipe: <span><%=@phrases.where(author: 'Felipe').count%></span></p>
-  <p>Benja: <span><%=@phrases.where(author: 'Benja').count%></span></p>
-  <p>Dani: <span><%=@phrases.where(author: 'Dani').count%></span></p>
+  <p>[ RANKING ]</p>
+  <p class='wtf'>Katty: <span><%=@phrases.where(author: 'Katty').count%></span> - </p>
+  <p class='wtf'>Rodri: <span><%=@phrases.where(author: 'Rodri').count%></span> - </p>
+  <p class='wtf'>Mauro: <span><%=@phrases.where(author: 'Mauro').count%></span> - </p>
+  <p class='wtf'>Rafik: <span><%=@phrases.where(author: 'Rafik').count%></span> - </p>
+  <p class='wtf'>Nacho Primo: <span><%=@phrases.where(author: 'Nacho Primo').count%></span> - </p>
+  <p class='wtf'>Nacho: <span><%=@phrases.where(author: 'Nacho').count%></span> - </p>
+  <p class='wtf'>Felipe: <span><%=@phrases.where(author: 'Felipe').count%></span> - </p>
+  <p class='wtf'>Benja: <span><%=@phrases.where(author: 'Benja').count%></span> - </p>
+  <p class='wtf'>Dani: <span><%=@phrases.where(author: 'Dani').count%></span></p>
 
 </div>
+
+
+<!--<div class='renew'><%= link_to 'Ver otra !', root_path %></div> -->

@@ -3,26 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .quote{
-  width: 960px;
+  width: 900px;
   margin: 0 auto;
   & > h1{
-    font-family: Helvetica;
+    font-family: 'Chalkduster';
     text-align: center;
     font-size: 72px;
   }
   & > p{
-    font-family: Helvetica;
+    font-family: 'Chalkduster';
     text-align: right;
     font-size: 24px;
   }
 }
 
 .ranking{
-  padding: 50px;
-  background: #e74c3c;
-  border: 3px solid #272727;
-  width: 960px;
-  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0,0,0, 1);
+  border: 5px solid rgba(120, 78, 32, 1);
   & > h3{
     font-family: Helvetica;
     text-align: center;
@@ -30,7 +28,10 @@
   }
   & > p{
     font-family: Helvetica;
-    text-align: left;
+    display: inline;
+    text-align: center;
     font-size: 18px;
   }
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
