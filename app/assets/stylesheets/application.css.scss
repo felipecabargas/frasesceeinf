@@ -13,9 +13,12 @@
  */
 
 body{
-	background: #fff;
+	background: #006600;
 }
 .content{
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 70px;
 	background: image-url('pizarra.png');
 	border: 20px solid rgba(120, 78, 32, 1);
 }
