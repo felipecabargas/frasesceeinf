@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
 
   def index
-    @phrase = Phrase.order('RANDOM()').first
-    @phrases = Phrase.all
+    @phrase = Phrase.order('RANDOM()').last
+    @authors = User.all
   end
 
 end

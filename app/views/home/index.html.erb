@@ -1,23 +1,13 @@
-<div class='content'>
-  <div class='quote'>
-    <h1>"<%= @phrase.quote %>"</h1>
-    <p>- <%= @phrase.author %></p>
-  </div>
-
+<div class='logo'>
+    <%= image_tag 'logo-ceeinf.png'%>
+    <p>Frases para el Bronce CEEINF 2014</p>
 </div>
 
-<div class='ranking'>
-  <p>[ RANKING ]</p>
-  <p class='wtf'>Edu: <span><%=@phrases.where(author: 'Edu').count%></span> - </p>
-  <p class='wtf'>Katty: <span><%=@phrases.where(author: 'Katty').count%></span> - </p>
-  <p class='wtf'>Rodri: <span><%=@phrases.where(author: 'Rodri').count%></span> - </p>
-  <p class='wtf'>Mauro: <span><%=@phrases.where(author: 'Mauro').count%></span> - </p>
-  <p class='wtf'>Rafik: <span><%=@phrases.where(author: 'Rafik').count%></span> - </p>
-  <p class='wtf'>Nacho Primo: <span><%=@phrases.where(author: 'Nacho Primo').count%></span> - </p>
-  <p class='wtf'>Nacho: <span><%=@phrases.where(author: 'Nacho').count%></span> - </p>
-  <p class='wtf'>Felipe: <span><%=@phrases.where(author: 'Felipe').count%></span> - </p>
-  <p class='wtf'>Benja: <span><%=@phrases.where(author: 'Benja').count%></span> - </p>
-  <p class='wtf'>Dani: <span><%=@phrases.where(author: 'Dani').count%></span></p>
+<div class='content'>
+  <div class='quote'>
+    <h1><%= @phrase.quote %></h1>
+    <p><%= @phrase.author %></p>
+  </div>
 
 </div>
 

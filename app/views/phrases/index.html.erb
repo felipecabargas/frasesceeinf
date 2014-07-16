@@ -1,21 +1,19 @@
-<h1>Listing phrases</h1>
+<h1 style="color: white; font-family: Helvetica;">Listing phrases</h1>
 
-<table>
+<table style="color: white; font-family: Helvetica; background: #272727; padding: 30px; border: 5px solid white;">
   <thead>
     <tr>
-      <th>Author</th>
-      <th>Quote</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="padding-right: 150px;">Autor</th>
+      <th style="padding-right: 150px;">Frase</th>
+      <th>Ver Frase</th>
     </tr>
   </thead>
 
   <tbody>
     <% @phrases.each do |phrase| %>
       <tr>
-        <td><%= phrase.author %></td>
-        <td><%= phrase.quote %></td>
+        <td style="padding-right: 150px;"><%= phrase.author %></td>
+        <td style="padding-right: 150px;"><%= phrase.quote %></td>
         <td><%= link_to 'Show', phrase %></td>
       </tr>
     <% end %>

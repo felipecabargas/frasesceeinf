@@ -11,18 +11,28 @@
  *= require_self
  *= require_tree .
  */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 body{
-	background: #006600;
-}
-.content{
-  width: 960px;
-  margin: 0 auto;
-  margin-top: 70px;
-	background: image-url('pizarra.png');
-	border: 20px solid rgba(120, 78, 32, 1);
+	background: image-url('chalkboard.jpg');
+  background-size: cover;
 }
 
 h1, h3, p{
 	color: #fff;
+}
+
+.logo{
+  margin: 0 auto;
+  margin-top: 50px;
+  opacity: 0.7;
+  p{
+    text-align: center;
+    font-family: Helvetica;
+  }
+  img{
+    width: 15%;
+    height: auto;
+    margin-left: 42.5%;
+  }
 }
