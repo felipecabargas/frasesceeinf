@@ -6,7 +6,7 @@
 <div class='content'>
   <div class='quote'>
     <h1><%= @phrase.quote %></h1>
-    <p><%= @phrase.author %></p>
+    <p><%= User.find(@phrase.user_id).name %></p>
   </div>
 
 </div>
