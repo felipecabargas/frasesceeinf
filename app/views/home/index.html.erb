@@ -9,7 +9,29 @@
     <p><%= User.find(@phrase.user_id).name %></p>
   </div>
 
+  <div id="donutchart" style="width: 900px; height: 500px;"></div>
+
 </div>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Autor', 'Frases'],
+        <%- @authors.each do |author| %>
+          ['<%= author.nickname %>', <%=  Phrase.count( conditions: { user_id: author.id}) %>],
+        <% end%>
+      ]);
 
+      var options = {
+        title: 'Contador de Frases',
+        pieHole: 0.4,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+      chart.draw(data, options);
+    }
+  </script>
 <!--<div class='renew'><%= link_to 'Ver otra !', root_path %></div> -->
